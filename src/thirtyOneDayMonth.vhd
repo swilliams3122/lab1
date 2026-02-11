@@ -81,7 +81,7 @@ begin
 	      i_D when "000", 
           i_D when "001",  
           i_D when "010", 
-          '1' when "011", 
+          '0' when "011", 
           '1' when "100", 
           not i_D when "101", 
           '1' when "110",
