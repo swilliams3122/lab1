@@ -79,12 +79,12 @@ begin
 	with w_sel select
 	   o_Y <=
 	      '1' when "000", 
-          '0' when "001", 
-          '1' when "010", 
-          '0' when "011", 
-          '1' when "100", 
-          '0' when "101",
-          '1' when "110",
+          i_D when "001",  
+          i_D when "010", 
+          i_D when "011", 
+          not i_D when "100", 
+          not i_D when "101", 
+          not i_D when "110",
           '0' when others;
 	---------------------------------------------------------------	
 end thirtyOneDayMonth_arch;
