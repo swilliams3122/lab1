@@ -71,10 +71,10 @@ architecture thirtyOneDayMonth_arch of thirtyOneDayMonth is
 begin
 	-- CONCURRENT STATEMENTS---------------------------------------
 	--assigning names to reflect original schematics (for ease of understanding if you wish to)
-	w_sel(0) <= i_A;	-- one
+	w_sel(0) <= i_B;	-- one
 	--finish assigning signals
-	w_sel(1) <= i_B;
-	w_sel(2) <= i_C;
+	w_sel(1) <= i_C;
+	w_sel(2) <= i_D;
 	--enter your logic here to implement the mux.  See VHDL reference sheet for MUX syntax.	
 	with w_sel select
 	   o_Y <=
