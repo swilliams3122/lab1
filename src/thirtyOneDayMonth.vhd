@@ -78,13 +78,13 @@ begin
 	--enter your logic here to implement the mux.  See VHDL reference sheet for MUX syntax.	
 	with w_sel select
 	   o_Y <=
-	      i_D when "000", 
+	      '0' when "000", 
           '1' when "001",  
-          '1' when "010", 
+          '0' when "010", 
           '1' when "011", 
-          '0' when "100", 
+          '1' when "100", 
           '0' when "101", 
-          '0' when "110",
+          '1' when "110",
           '0' when others;
 	---------------------------------------------------------------	
 end thirtyOneDayMonth_arch;
