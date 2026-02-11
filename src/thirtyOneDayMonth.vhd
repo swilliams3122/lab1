@@ -78,12 +78,12 @@ begin
 	--enter your logic here to implement the mux.  See VHDL reference sheet for MUX syntax.	
 	with w_sel select
 	   o_Y <=
-	      i_D when "000", 
-          i_D when "001",  
-          i_D when "010", 
+	      '1' when "000", 
+          '0' when "001", 
+          '1' when "010", 
           '0' when "011", 
           '1' when "100", 
-          not i_D when "101", 
+          '0' when "101",
           '1' when "110",
           '0' when others;
 	---------------------------------------------------------------	
